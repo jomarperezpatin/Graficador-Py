@@ -1,15 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 
-def sin (f, t):
-    x = np.sin(2 * np.pi * f * t)
-    return x
-
 f = 10
-fs= 1000
-t = np.linspace(0, 0.1, 101)
+fs = 1000
+t = np.linspace(0, 0.1, 11)
+y = np.sin(2 * np.pi * f * t)
 
-y = sin(f,t-0.02 )
 plt.stem(t, y)
 plt.xlabel('Tiempo (s)')
 plt.ylabel('Amplitud')
